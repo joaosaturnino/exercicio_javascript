@@ -1,0 +1,40 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+        var n = prompt("Digite a quantidade de idades")
+          n = parseInt(n)
+          var x = 1
+          var soma = 0
+
+        while (x <= n){
+
+            var idade = prompt("Digite a sua idade")
+            idade = parseInt(idade)
+            soma = soma + idade //var. acumuladora
+            x++
+        }
+
+        var idade = soma/n
+
+        if(media >= 60){
+            document.write("População idosa, com média: "+media)
+        }
+
+        else if (media >= 26){
+            document.write("População adulta, com média: "+media)
+        }
+        else{
+            document.write("População jovem, com média: "+media)
+        }
+    </script>
+</body>
+</html>
